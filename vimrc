@@ -24,7 +24,9 @@ let java_space_errors = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType python,c,cpp TagbarOpen
+if !(&diff) 
+  autocmd FileType python,c,cpp TagbarOpen
+endif
 let g:tagbar_width=30
 nmap <F8> :TagbarToggle<CR>
 
