@@ -28,6 +28,9 @@ set formatoptions+=cro
 "Enable spelling check
 set spell spelllang=en_us
 
+"This is required for plugin such as vim-fugitive to load FT Plugins
+filetype plugin on
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
