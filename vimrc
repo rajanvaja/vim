@@ -21,12 +21,8 @@ let c_space_errors = 1
 let python_space_errors = 1
 let java_space_errors = 1
 
-"C indentation and formatting
-set cindent
-set formatoptions+=cro
-
 "Enable spelling check
-set spell spelllang=en_us
+"set spell spelllang=en_us
 
 "This is required for plugin such as vim-fugitive to load FT Plugins
 filetype plugin on
