@@ -10,3 +10,6 @@
 [submodule "pack/plugins/start/fugitive"]
 	path = pack/plugins/start/fugitive
 	url = https://tpope.io/vim/fugitive.git
+[submodule "pack/plugins/start/ctrlp"]
+	path = pack/plugins/start/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim
