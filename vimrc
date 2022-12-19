@@ -21,6 +21,27 @@ let c_space_errors = 1
 let python_space_errors = 1
 let java_space_errors = 1
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" C syntax errors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:highlight ExtraWhitespace ctermbg=red guibg=red
+
+" Show trailing whitespace:
+:match ExtraWhitespace /\s\+$/
+
+" Show trailing whitespace and spaces before a tab:
+:match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" Show tabs that are not at the start of a line:
+:match ExtraWhitespace /[^\t]\zs\t\+/
+
+" Show spaces used for indenting (so you use only tabs for indenting).
+:match ExtraWhitespace /^\t*\zs \+/
+
+" Switch off :match highlighting.
+":match
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 "Enable spelling check
 "set spell spelllang=en_us
 
