@@ -36,7 +36,7 @@ let java_space_errors = 1
 :match ExtraWhitespace /[^\t]\zs\t\+/
 
 " Show spaces used for indenting (so you use only tabs for indenting).
-:match ExtraWhitespace /^\t*\zs \+/
+autocmd FileType c,cpp :match ExtraWhitespace /^\t*\zs \+/
 
 " Switch off :match highlighting.
 ":match
