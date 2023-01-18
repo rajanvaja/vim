@@ -24,16 +24,7 @@ let java_space_errors = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " C syntax errors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:highlight ExtraWhitespace ctermbg=red guibg=red
-
-" Show trailing whitespace:
-:match ExtraWhitespace /\s\+$/
-
-" Show trailing whitespace and spaces before a tab:
-:match ExtraWhitespace /\s\+$\| \+\ze\t/
-
-" Show tabs that are not at the start of a line:
-:match ExtraWhitespace /[^\t]\zs\t\+/
+:highlight ExtraWhitespace ctermbg=cyan guibg=cyan
 
 " Show spaces used for indenting (so you use only tabs for indenting).
 autocmd FileType c,cpp :match ExtraWhitespace /^\t*\zs \+/
