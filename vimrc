@@ -16,14 +16,22 @@ set showcmd
 "show ruler line,col. Default is also on.
 set ruler
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" jump to the last position when reopening a file 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" syntax errors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight space errors
 let c_space_errors = 1
 let python_space_errors = 1
 let java_space_errors = 1
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" C syntax errors
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :highlight ExtraWhitespace ctermbg=cyan guibg=cyan
 
 " Show spaces used for indenting (so you use only tabs for indenting).
