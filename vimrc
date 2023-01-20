@@ -60,6 +60,6 @@ nmap <F7> :NERDTreeToggle<CR>
 "Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 "Use a custom file listing command:
-let g:ctrlp_user_command = 'find %s -type f'
+let g:ctrlp_user_command = ['find %s -type f']
 "file name only mode
 let g:ctrlp_by_filename = 1
