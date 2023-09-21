@@ -1,3 +1,6 @@
+"max tabs
+set tabpagemax=100
+
 "highlight search keyword
 set hlsearch
 
