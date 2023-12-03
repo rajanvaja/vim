@@ -74,3 +74,10 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 let g:ctrlp_user_command = ['find %s -type f']
 "file name only mode
 let g:ctrlp_by_filename = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" DoxygenToolkit
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:DoxygenToolkit_paramTag_pre="@param[in] "
+" below is not required due to auto indenting
+"let g:DoxygenToolkit_interCommentTag=" * "
