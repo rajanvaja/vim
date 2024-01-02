@@ -23,6 +23,8 @@ set ruler
 set autoindent
 set cindent
 
+"skeleton
+autocmd BufNewFile  *.c 0r ~/.vim/templates/skeleton.c
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " jump to the last position when reopening a file 
