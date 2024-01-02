@@ -19,6 +19,11 @@ set showcmd
 "show ruler line,col. Default is also on.
 set ruler
 
+"set autoindentation
+set autoindent
+set cindent
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " jump to the last position when reopening a file 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
